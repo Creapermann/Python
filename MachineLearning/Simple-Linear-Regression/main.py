@@ -18,9 +18,9 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_
 
 
 # Make a prediction
-regressor = LinearRegression()
-regressor.fit(x_train, y_train)
-y_pred = regressor.predict(x_test)
+regressor = LinearRegression()      # Create the Linear_Regression object
+regressor.fit(x_train, y_train)     # Train the regressor with the training data
+y_pred = regressor.predict(x_test)  # Make a prediction with the x_test dataset for y_test
 
 
 # Create a linear regression of the training set
